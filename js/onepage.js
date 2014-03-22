@@ -107,7 +107,7 @@ $(document).ready(function(){
 			targetSection = $(this).attr('href');
 			
 			//Set doc title
-			document.title = 'ほしのぱん（仮）' + ( targetSection.replace( /[_\-\#\!\.\/]/g, ' ' ));
+			document.title = 'ピーカブー 〜ほりのうちのパン屋さん〜' + ( targetSection.replace( /[_\-\#\!\.\/]/g, ' ' ));
 
 			//get pos of target section
 			var targetOffset = Math.floor($(targetSection).offset().top+1);

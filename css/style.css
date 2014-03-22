@@ -23,7 +23,7 @@
 	2.COMMONS
 --------------------------------------------------------*/
 
-	body{background:#111;font:13px/18px 'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','ƒƒCƒŠƒI',Meiryo,'‚l‚r ‚oƒSƒVƒbƒN', Arial, Helvetica, sans-serif;}
+	body{background:#111;font:13px/18px 'ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3','Hiragino Kaku Gothic Pro','ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I',Meiryo,'ï¿½lï¿½r ï¿½oï¿½Sï¿½Vï¿½bï¿½N', Arial, Helvetica, sans-serif;}
 
 /*--------------------------------------------------------
 	3.STRUCTURAL 
@@ -56,6 +56,10 @@
 	/*homepage*/
 	.logo-homepage{width:180px;height:180px;position:fixed;left:50%;top:50%;margin:-90px 0 0 -90px;-webkit-border-radius: 250px; -moz-border-radius: 250px; border-radius:250px; overflow:hidden; background:#ff2778 url(../images/logo.png) center center no-repeat; background: url(../images/logo.png) center center no-repeat rgba(255,39,120,1); background-attachment:fixed; z-index:3;}
 	.logo-homepage a{width:100%;height:100%; float:left;}
+	
+	/*homepage*/
+	.welcome-homepage{width:380px;height:380px;position:fixed;left:42%;top:30%;margin:-90px 0 0 -90px;-webkit-border-radius: 250px; -moz-border-radius: 250px; border-radius:250px; overflow:hidden; background:#336988 url(../images/welcome.jpg) center center no-repeat; background: url(../images/welcome.jpg) center center no-repeat rgba(100,39,120,1); background-attachment:fixed; z-index:3;}
+	.welcome-homepage a{width:100%;height:100%; float:left;}
 	
 	/*inner pages*/
 	.header{width:100%; height:50px; line-height:50px; background: url(../images/ie8-transparent-bkg.png);/*ie8 fallback*/ background: rgba(0,0,0,0.5) url(../images/pattern-header-banner.png) repeat; position:fixed; top:0; z-index:50;}

@@ -43,7 +43,7 @@ $(function(){
 		
 
 		//Set doc title - strip symbols & some words
-		document.title = 'ほしのぱん（仮）' + ( hash.replace( /[_\-\#\!\.\/]/g, ' ' )
+		document.title = 'ピーカブー 〜ほりのうちのパン屋さん〜' + ( hash.replace( /[_\-\#\!\.\/]/g, ' ' )
 												  .replace( 'html', ' ' )
 												  .replace( folderName, ' ' ));
 	
