@@ -119,11 +119,6 @@ body.custom-background {
 		font-weight: bold;
 }
 
-#popup {
-	width: 510px; /*レスポンシブ対応必要*/
-	height: 100%;
-}
-
 #footer.even {
     background: url("../img/pattern-header-banner.png") repeat scroll 0 0 #353535;
 }
@@ -152,4 +147,7 @@ body.custom-background {
 }
 
 
-
+#popup {
+	width: 500px;
+	height: 100%;
+}

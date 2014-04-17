@@ -34,7 +34,7 @@ $(window).load(function() {
 function glay() {
 	/* グレイパネル作成
 	 -------------------------------------------------------------------------------*/
-	$('<div class="gray_panel" id="gray_panel"></div>').css({
+	$('<div class="gray_panel" id="gray_panel" onclick="glay_end()"></div>').css({
 		"background" : "#000",
 		"opacity" : "0.5",
 		"width" : "100%",
@@ -47,22 +47,40 @@ function glay() {
 	}).appendTo($("body"));
 
 	// ポップアップの画面中央になる様な位置関係を算出
-	var left_positon = ($("body").width() / 2) - ($("#popup").width() / 2)
+	var left_position = ($("body").width() / 2) - ($("#popup").width() / 2);
+	var top_position = 30;
 
 	// グレーアウトをフェードイン
 	$("#gray_panel").fadeIn("slow");
 
 	// ポップアップのスタイルを定義
 	$("#popup")
+		.css("position", "relative")
 		.css("z-index", "51")
 		.css("position", "fixed")
-		.css("top", 10)
-		.css("left", left_positon)
+		.css("top", top_position)
+		.css("left", left_position)
 		.fadeIn("slow");
 
+	// フレックススライダー初期化
 	$('.flexslider').flexslider({
-        animation: "slide"
+        animation: "slide",
+        controlNav: "thumbnails"
       });
+    
+    // フレックススライダーCSS
+    $(".slides")
+    	.css("text-align", "center")
+    	.css("color", "#fff")
+		.css("background-color", "rgba(0, 0, 0, 0.8)");
+
+	// 閉じるボタンCSS
+	$(".menu_close")
+		.css("position", "absolute")
+		.css("height", "30px")
+		.css("width", "30px")
+		.css("left", "5px")
+		.css("top", "5px");
 };
 
 function glay_end() {
