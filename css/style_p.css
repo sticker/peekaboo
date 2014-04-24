@@ -37,7 +37,7 @@ body {
 }
 
 body.custom-background {
-	background-image: url('../img/2.gif');
+	background-image: url('../img/bg750.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
