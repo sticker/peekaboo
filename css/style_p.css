@@ -84,6 +84,7 @@ body.custom-background {
 }
 
 .menu, .shop, .info{
+	position: relative;
 	background: #FFFFEE;
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
@@ -91,6 +92,7 @@ body.custom-background {
     height: 310px;
     margin: 0 17px 25px 0;
     padding: 0 15px;
+	padding-top: 15px;
     width: 285px;
 }
 
@@ -119,9 +121,12 @@ body.custom-background {
 		font-weight: bold;
 }
 
-#popup {
-	width: 510px; /*レスポンシブ対応必要*/
-	height: 100%;
+.map {
+}
+
+.flexslider {
+	border: 0;
+	@include box-shadow(black 0 0 0);
 }
 
 #footer.even {

@@ -1,4 +1,5 @@
 $(window).load(function() {
+	//nivoSlider初期化
 	$('#slider').nivoSlider({
 		randomStart : true,
 		//effect:'random', // 画像切り替え時のアニメーション
@@ -28,8 +29,72 @@ $(window).load(function() {
 		//afterLoad: function(){} // スライドのロードが完了したときのコールバック関数
 	});
 
+   //tosrus初期化
+   $(".menu a").tosrus({
+   	effect : "fade",
+	buttons : true,
+	slides : {
+		scale : "fit"
+	},
+	pagination : {
+		add : true,
+		type : "thumbnails"
+	},
+	caption : {
+		add : true,
+	}
+   });
+   
+   //windy初期化
+   				var $el = $( '#wi-el' ),
+					windy = $el.windy(),
+					allownavnext = false,
+					allownavprev = false;
+
+				$( '#nav-prev' ).on( 'mousedown', function( event ) {
+
+					allownavprev = true;
+					navprev();
+				
+				} ).on( 'mouseup mouseleave', function( event ) {
+
+					allownavprev = false;
+				
+				} );
+
+				$( '#nav-next' ).on( 'mousedown', function( event ) {
+
+					allownavnext = true;
+					navnext();
+				
+				} ).on( 'mouseup mouseleave', function( event ) {
+
+					allownavnext = false;
+				
+				} );
+
+				function navnext() {
+					if( allownavnext ) {
+						windy.next();
+						setTimeout( function() {	
+							navnext();
+						}, 150 );
+					}
+				}
+				
+				function navprev() {
+					if( allownavprev ) {
+						windy.prev();
+						setTimeout( function() {	
+							navprev();
+						}, 150 );
+					}
+				}
+   
 });
 
+
+//以下不要////////////////
 // グレーアウト設定
 function glay() {
 	/* グレイパネル作成
@@ -46,9 +111,10 @@ function glay() {
 		"z-index" : "50"
 	}).appendTo($("body"));
 
+
 	// ポップアップの画面中央になる様な位置関係を算出
 	var left_position = ($("body").width() / 2) - ($("#popup").width() / 2);
-	var top_position = 30;
+	var top_position = 10;
 
 	// グレーアウトをフェードイン
 	$("#gray_panel").fadeIn("slow");
@@ -76,7 +142,6 @@ function glay() {
 
 	// 閉じるボタンCSS
 	$(".menu_close")
-		.css("position", "absolute")
 		.css("height", "30px")
 		.css("width", "30px")
 		.css("left", "5px")
