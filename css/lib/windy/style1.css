@@ -1,5 +1,5 @@
 .windy-demo {
-	width: 200px;
+	width: 500px;
 	margin: 40px auto;
 	color: #aaa;
 }
@@ -64,7 +64,7 @@
 
 .windy-demo nav {
 	position: relative;
-	width: 96px;
+	width: 196px;
 	margin: 0 auto;
 }
 

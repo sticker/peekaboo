@@ -29,7 +29,6 @@
 		<script type="text/javascript" src="js/lib/windy/modernizr.custom.79639.js"></script>
 		<noscript><link rel="stylesheet" href="css/lib/windy/noJS.css" media="all"></noscript>
 		
-		
 		<link rel="stylesheet" href="css/base.css" media="all">
 		<link rel="stylesheet" href="css/select_style.css" media="all">
 
@@ -50,10 +49,10 @@
 				<div class="col2 logo"><img src="img/logo_only_touka.png">
 				</div>
 				<div class="col6 logo2">
-					PeeK-a-Boo （ピーカブー） ～ ほりのうちのパン屋さん～
+					<img src="img/greet.png" width="450" height="100">
 				</div>
 				<div class="col4 logo3 last">
-					新潟県魚沼市堀之内
+					<img src="img/phoneno.png" width="165" height="20">
 				</div>
 			</div>
 
@@ -107,6 +106,9 @@
 				</div>
 
 				<div class="col4 shop">
+					<div class="label">
+						<img class="opa lazy" width="72" height="71" src="img/label_map.png" style="opacity: 1; z-index: 1">
+					</div>
 					<div class="topBoxImg img-wrap">
 						<img class="opa lazy" width="290" height="218" alt="地図" src="img/map.png" style="opacity: 1;">
 					</div>
@@ -123,9 +125,9 @@
 					</p>
 				</div>
 
-				<div class="col4 info last">
+				<div class="col4 info last" onclick="windy_popup()">
 					<div class="topBoxImg img-wrap">
-						
+						<img class="opa lazy" width="410" height="310" alt="ピーカブーができるまで" src="img/process/process_top.png" style="opacity: 1;">
 					</div>
 					<div class="clearfix t0b10">
 						<div class="floatL topGenre">
@@ -150,46 +152,42 @@
 				</div>
 			</div>
 			
-			<div class="onerow">
-				<div class="windy-demo">
+			
+			
+			<div class="windy-demo" style="display: none;">
 				<ul id="wi-el" class="wi-container">
 							<li>
-								<img src="img/process/S__1081362.jpg" alt="image1"/>
+								<img src="img/process/process1.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
 							<li>
-								<img src="img/process/S__1146914.jpg" alt="image1"/>
+								<img src="img/process/process2.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
 							<li>
-								<img src="img/process/S__1146915.jpg" alt="image1"/>
+								<img src="img/process/process3.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
 							<li>
-								<img src="img/process/S__1146917.jpg" alt="image1"/>
+								<img src="img/process/process4.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
 							<li>
-								<img src="img/process/S__1146918.jpg" alt="image1"/>
+								<img src="img/process/process5.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
 							<li>
-								<img src="img/process/S__1155080.jpg" alt="image1"/>
+								<img src="img/process/process6.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
 							<li>
-								<img src="img/process/S__1155081.jpg" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/S__1171502.jpg" alt="image1"/>
+								<img src="img/process/process7.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
 								<p>作っているところの写真</p>
 							</li>
@@ -198,57 +196,9 @@
 							<span id="nav-prev">prev</span>
 							<span id="nav-next">next</span>
 						</nav>
-					</div>
-				
-			</div>
-
-			<div id="popup" style="display: none;">
-				<div class="flexslider">
-					<div class="menu_close">
-						<img src="img/close.png" onclick="glay_end()">
-					</div>
-					<ul class="slides">
-						<li data-thumb="img/menu/an-thumb.png">
-							<img src="img/menu/an.png" />
-							<p>
-								あんぱん！
-								<br>
-								とってもおいしいあまーいあんぱん
-							</p>
-						</li>
-						<li data-thumb="img/menu/cheese-thumb.png">
-							<img src="img/menu/cheese.png" />
-							<p>
-								チーズパン！
-							</p>
-						</li>
-						<li data-thumb="img/menu/cream-thumb.png">
-							<img src="img/menu/cream.png" />
-							<p>
-								クリームパン！
-							</p>
-						</li>
-						<li data-thumb="img/menu/cro-thumb.png">
-							<img src="img/menu/cro.png" />
-							<p>
-								クロワッサン！
-							</p>
-						</li>
-						<li data-thumb="img/menu/curry-thumb.png">
-							<img src="img/menu/curry.png" />
-							<p>
-								カレーパン！
-							</p>
-						</li>
-						<li data-thumb="img/menu/melon-thumb.png">
-							<img src="img/menu/melon.png" />
-							<p>
-								メロンパン！
-							</p>
-						</li>
-					</ul>
 				</div>
-			</div>
+
+
 
 		</div>
 
@@ -259,6 +209,7 @@
 		<script type="text/javascript" src="js/lib/jquery.tosrus.min.all.js"></script>
 		<script type="text/javascript" src="js/lib/windy/jquery.windy.js"></script>
 		<script type="text/javascript" src="js/lib/windy/jquery-ui-1.8.23.custom.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.bpopup.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>

@@ -93,6 +93,15 @@ $(window).load(function() {
    
 });
 
+function windy_popup(){
+	$('.windy-demo').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'
+	});
+}
+
+
 
 //以下不要////////////////
 // グレーアウト設定
