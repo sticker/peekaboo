@@ -66,7 +66,7 @@ body.custom-background {
 }
 
 .logo2 {
-	float: left;
+	clear:both;
 	color: #000;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -112,8 +112,8 @@ body.custom-background {
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
     float: left;
-    width: 400px;
-    height: 430px;
+    width: 330px;
+    height: 350px;
     margin: 0 25px 25px 0;
     padding: 15px;
 }
