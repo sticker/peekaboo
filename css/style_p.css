@@ -48,7 +48,7 @@ body.custom-background {
 .header-top {
 	margin: 0 auto;
 	text-align: center;
-	width: 960px;
+	width: 1020px;
 }
 
 
@@ -140,9 +140,6 @@ body.custom-background {
 		font-size: 12px;
 		color: #808080;
 		font-weight: bold;
-}
-
-.map {
 }
 
 .flexslider {
