@@ -74,7 +74,7 @@ body.custom-background {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 30px;
-	width: 80%;
+	width: 60%;
 	height: 80px;
 	
 }
@@ -112,8 +112,8 @@ body.custom-background {
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
     float: left;
-    width: 280px;
-    height: 310px;
+    width: 400px;
+    height: 430px;
     margin: 0 25px 25px 0;
     padding: 15px;
 }
