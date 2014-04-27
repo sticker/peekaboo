@@ -1,13 +1,13 @@
 $(window).load(function() {
 	//nivoSlider初期化
 	$('#slider').nivoSlider({
-		randomStart : true,
+		randomStart : false,
 		//effect:'random', // 画像切り替え時のアニメーション
 		//slices:15, // For slice animations
 		//boxCols: 8, // For box animations
 		//boxRows: 4, // For box animations
 		animSpeed : 500, // アニメーション速度(ms)
-		pauseTime : 5000, // 画像切り替えまでの時間(ms)
+		pauseTime : 4000, // 画像切り替えまでの時間(ms)
 		//startSlide:0, // 初めに表示する画像位置
 		//directionNav:true, // 前/次ボタンを表示
 		//directionNavHide:true, // マウスホバー時のみdirectionNavを表示
