@@ -1,5 +1,6 @@
 $(window).load(function() {
 	//nivoSlider初期化
+	/*
 	$('#slider').nivoSlider({
 		randomStart : false,
 		//effect:'random', // 画像切り替え時のアニメーション
@@ -28,6 +29,27 @@ $(window).load(function() {
 		//lastSlide: function(){}, // 最後の画像が表示される後のコールバック関数
 		//afterLoad: function(){} // スライドのロードが完了したときのコールバック関数
 	});
+*/
+
+   //responsiveSlider初期化
+   $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 1000,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: false,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
 
    //tosrus初期化
    $(".menu a").tosrus({
@@ -101,6 +123,13 @@ function windy_popup(){
 	});
 }
 
+function rg_popup(){
+	$('.rg-gallery').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'
+	});
+}
 
 
 //以下不要////////////////

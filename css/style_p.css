@@ -95,9 +95,11 @@ body.custom-background {
 .top-img {
 	clear:both;
 	position: relative;
+	margin: 0 auto;
 	color: #fff;
 	margin-bottom: 20px;
 	text-align: center;
+	max-width : 1020px;
 }
 
 .slider-wrapper{
