@@ -19,12 +19,11 @@
 		<link rel="canonical" href="http://horino-peeka.boo.jp/">
 
 		<link rel="stylesheet" href="css/lib/onepcssgrid.css" media="all">
-		<link rel="stylesheet" href="css/lib/nivo-slider.css" media="all">
 		<link rel="stylesheet" href="css/lib/responsiveslides.css" media="all">
-		<link rel="stylesheet" href="css/lib/flexslider.css" media="all">
-		<link rel="stylesheet" href="css/lib/jquery.tosrus.all.css" media="all">
+		<link rel="stylesheet" href="css/lib/fotorama.css" media="all">
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/lib/windy/normalize.css" media="all">
 		<link rel="stylesheet" href="css/lib/windy/windy.css" media="all">
 		<link rel="stylesheet" href="css/lib/windy/style1.css" media="all">
 		<script type="text/javascript" src="js/lib/windy/modernizr.custom.79639.js"></script>
@@ -40,33 +39,6 @@
 		<!--[if lt IE 9]>
 		<script src="js/lib/css3-mediaqueries.js"></script>
 		<![endif]-->
-
-		<link rel="stylesheet" href="css/lib/rg/style.css" media="all">
-		<link rel="stylesheet" href="css/lib/rg/elastislide.css" media="all">
-		<noscript>
-			<style>
-				.es-carousel ul{
-					display:block;
-				}
-			</style>
-		</noscript>
-		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
-			<div class="rg-image-wrapper">
-				{{if itemsCount > 1}}
-					<div class="rg-image-nav">
-						<a href="#" class="rg-image-nav-prev">Previous Image</a>
-						<a href="#" class="rg-image-nav-next">Next Image</a>
-					</div>
-				{{/if}}
-				<div class="rg-image"></div>
-				<div class="rg-loading"></div>
-				<div class="rg-caption-wrapper">
-					<div class="rg-caption" style="display:none;">
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</script>
 		
 	</head>
 
@@ -117,26 +89,14 @@
 
 
 
-		<div class="onepcssgrid-1000">
-			<div class="onerow">
+			<div class="contents">
 
-				<div class="col4 menu" onclick="rg_popup()">
+				<div class="menu" onclick="fotorama_popup()">
 					<div class="label">
 						<img class="opa lazy" width="72" height="71" src="img/label_pick.png" style="opacity: 1;">
 					</div>
 					<div class="topBoxImg img-wrap">
-						<a href="img/menu/an.png" title="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img class="opa lazy" width="290" height="218" alt="メニュー" src="img/menu/marble.png" style="opacity: 1;"></a>
-						<a href="img/menu/cheese.png"></a>
-						<a href="img/menu/cream.png"></a>
-						<a href="img/menu/cro.png"></a>
-						<a href="img/menu/curry.png"></a>
-						<a href="img/menu/melon.png"></a>
-						<a href="img/menu/cheese.png"></a>
-						<a href="img/menu/cream.png"></a>
-						<a href="img/menu/cro.png"></a>
-						<a href="img/menu/curry.png"></a>
-						<a href="img/menu/melon.png"></a>
-
+						<img class="opa lazy" width="290" height="218" alt="メニュー" src="img/menu/marble.png" style="opacity: 1;">
 					</div>
 					<div class="clearfix t0b10">
 						<div class="floatL topGenre">
@@ -151,7 +111,7 @@
 					</p>
 				</div>
 
-				<div class="col4 shop">
+				<div class="shop">
 					<div class="label">
 						<img class="opa lazy" width="72" height="71" src="img/label_map.png" style="opacity: 1; z-index: 1">
 					</div>
@@ -171,7 +131,7 @@
 					</p>
 				</div>
 
-				<div class="col4 info last" onclick="windy_popup()">
+				<div class="info" onclick="windy_popup()">
 					<div class="topBoxImg img-wrap">
 						<img class="opa lazy" width="410" height="310" alt="ピーカブーができるまで" src="img/process/process_top.png" style="opacity: 1;">
 					</div>
@@ -190,56 +150,42 @@
 
 			</div>
 
-
-
-
-
-
-
-			
-			
-			
-
-
-
-		</div>
 		
 		
+
 		<div id="footer" class="even">
 			<p class="copyright">
 				&copy; PeeK-a-Boo （ピーカブー） ～ ほりのうちのパン屋さん～ All rights reserved.
 			</p>
 		</div>
 
+		
+		
 
 
-
-				<div id="rg-gallery" class="rg-gallery" style="display: none;">
-					<div class="rg-thumbs">
-						<!-- Elastislide Carousel Thumbnail Viewer -->
-						<div class="es-carousel-wrapper">
-							<div class="es-nav">
-								<span class="es-nav-prev">Previous</span>
-								<span class="es-nav-next">Next</span>
-							</div>
-							<div class="es-carousel">
-								<ul>
-									<li><a href="#"><img src="img/menu/an-thumb.png" data-large="img/menu/an.png" alt="アンパン" data-description="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100" /></a></li>
-									<li><a href="#"><img src="img/menu/cheese-thumb.png" data-large="img/menu/cheese.png" alt="ちーずパン" data-description="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120" /></a></li>
-									<li><a href="#"><img src="img/menu/cream-thumb.png" data-large="img/menu/cream.png" alt="クリームパン" data-description="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100" /></a></li>
-									<li><a href="#"><img src="img/menu/cro-thumb.png" data-large="img/menu/cro.png" alt="クロワッサン" data-description="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100" /></a></li>
-									<li><a href="#"><img src="img/menu/curry-thumb.png" data-large="img/menu/curry.png" alt="カレーパン" data-description="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100" /></a></li>
-									<li><a href="#"><img src="img/menu/melon-thumb.png" data-large="img/menu/melon.png" alt="メロンパン" data-description="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100" /></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Elastislide Carousel Thumbnail Viewer -->
-					</div><!-- rg-thumbs -->
-				</div><!-- rg-gallery -->
+<div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-maxwidth="1020" data-ratio="480/400" >
+  <a href="img/menu/an.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
+  <a href="img/menu/cheese.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
+  <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
+  <a href="img/menu/cro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
+  <a href="img/menu/curry.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
+  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
+    <a href="img/menu/an.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
+  <a href="img/menu/cheese.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
+  <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
+  <a href="img/menu/cro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
+  <a href="img/menu/curry.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
+  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
+    <a href="img/menu/an.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
+  <a href="img/menu/cheese.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
+  <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
+  <a href="img/menu/cro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
+  <a href="img/menu/curry.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
+  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
+</div>
 				
-				
-							<div class="windy-demo" style="display: none;">
-				<ul id="wi-el" class="wi-container">
+				<div class="windy-demo">
+					<ul id="wi-el" class="wi-container">
 							<li>
 								<img src="img/process/process1.png" alt="image1"/>
 								<h4>ピーカブーができるまで</h4>
@@ -282,20 +228,15 @@
 						</nav>
 				</div>
 
-				
+
 				
 		<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/lib/jquery.nivo.slider.js"></script>
 		<script type="text/javascript" src="js/lib/responsiveslides.min.js"></script>
-		<script type="text/javascript" src="js/lib/jquery.flexslider-min.js"></script>
-		<script type="text/javascript" src="js/lib/jquery.tosrus.min.all.js"></script>
+		<script type="text/javascript" src="js/lib/fotorama.js"></script>
 		<script type="text/javascript" src="js/lib/windy/jquery.windy.js"></script>
 		<script type="text/javascript" src="js/lib/windy/jquery-ui-1.8.23.custom.min.js"></script>
 		<script type="text/javascript" src="js/lib/jquery.bpopup.min.js"></script>
-		<script type="text/javascript" src="js/lib/jquery.tmpl.min.js"></script>
-		<script type="text/javascript" src="js/lib/jquery.elastislide.js"></script>
-		<script type="text/javascript" src="js/lib/gallery.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>

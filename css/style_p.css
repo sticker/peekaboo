@@ -30,7 +30,7 @@ img{ max-width : 100%}
 
 html,body {
   height:100%;
-  min-height: 100%; 
+  min-height: 100%;
 }
 
 body {
@@ -97,7 +97,6 @@ body.custom-background {
 	position: relative;
 	margin: 0 auto;
 	color: #fff;
-	margin-bottom: 20px;
 	text-align: center;
 	max-width : 1020px;
 }
@@ -107,16 +106,30 @@ body.custom-background {
     height:280px; /*557*/
 }
 
+.contents {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	width : 990px;
+}
+
 .menu, .shop, .info{
 	position: relative;
 	background: #FFFFEE;
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
     float: left;
-    width: 280px;
-    height: 310px;
-    margin: 0 25px 25px 0;
+    width: 300px;
+    height: 340px;
+    margin: 25px 15px 25px 15px;
     padding: 15px;
+}
+
+.menu img, .shop img, .info img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .topBoxImg {
@@ -143,9 +156,9 @@ body.custom-background {
 		font-weight: bold;
 }
 
-.flexslider {
-	border: 0;
-	@include box-shadow(black 0 0 0);
+.fotorama {
+	width: auto;
+	height: auto;
 }
 
 #footer.even {
@@ -153,16 +166,14 @@ body.custom-background {
 }
 #footer {
     position: relative;
-    overflow: hidden;
     clear: both;
     font-size: 15px;
     color: #C9C9C9;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 50px 0;
     z-index: 2;
     width: 100%;
-    height: auto;
 }
 
 /*

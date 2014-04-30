@@ -1,4 +1,8 @@
 $(window).load(function() {
+	
+	$(".fotorama").hide();
+	$(".windy-demo").hide();
+	
 	//nivoSlider初期化
 	/*
 	$('#slider').nivoSlider({
@@ -51,23 +55,9 @@ $(window).load(function() {
   after: function(){}     // Function: After callback
 });
 
-   //tosrus初期化
-   $(".menu a").tosrus({
-   	effect : "fade",
-	buttons : true,
-	slides : {
-		scale : "fit"
-	},
-	pagination : {
-		add : true,
-		type : "thumbnails"
-	},
-	caption : {
-		add : true,
-	}
-   });
    
    //windy初期化
+   
    				var $el = $( '#wi-el' ),
 					windy = $el.windy(),
 					allownavnext = false,
@@ -112,9 +102,12 @@ $(window).load(function() {
 						}, 150 );
 					}
 				}
+				
    
 });
 
+
+	
 function windy_popup(){
 	$('.windy-demo').bPopup({
 	    easing: 'easeOutBack', //uses jQuery easing plugin
@@ -123,13 +116,19 @@ function windy_popup(){
 	});
 }
 
-function rg_popup(){
-	$('.rg-gallery').bPopup({
+function fotorama_popup(){
+	$('.fotorama').bPopup({
 	    easing: 'easeOutBack', //uses jQuery easing plugin
             speed: 450,
-            transition: 'slideDown'
+            transition: 'slideDown',
 	});
 }
+
+
+
+
+
+
 
 
 //以下不要////////////////

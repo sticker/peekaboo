@@ -96,14 +96,20 @@ body.custom-background {
 	clear:both;
 	position: relative;
 	color: #fff;
-	margin-bottom: 20px;
 	text-align: center;
-	padding: 10px 0;
 }
 
 .slider-wrapper{
     width:100%;
     height:100%; /*557*/
+}
+
+.contents {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	width : 650px;
 }
 
 .menu, .shop, .info{
@@ -112,10 +118,16 @@ body.custom-background {
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
     float: left;
-    width: 280px;
-    height: 310px;
-    margin: 0 25px 25px 0;
+    width: 300px;
+    height: 340px;
+    margin: 15px 10px 15px 10px;
     padding: 15px;
+}
+
+.menu img, .shop img, .info img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .topBoxImg {
@@ -160,7 +172,6 @@ body.custom-background {
     font-size: 15px;
     color: #C9C9C9;
     text-align: center;
-    margin-top: 20px;
     padding: 50px 0;
     z-index: 2;
     width: 100%;

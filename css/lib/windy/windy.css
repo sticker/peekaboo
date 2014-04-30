@@ -1,6 +1,10 @@
 ul.wi-container {
+	/*
 	width: 250px;
 	height: 350px;
+	*/
+	width: 350px;
+	height: 450px;
 	margin: 0 auto 30px;
 	position: relative;
 	padding: 0;
