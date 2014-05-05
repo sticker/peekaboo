@@ -21,6 +21,8 @@
 		<link rel="stylesheet" href="css/lib/onepcssgrid.css" media="all">
 		<link rel="stylesheet" href="css/lib/responsiveslides.css" media="all">
 		<link rel="stylesheet" href="css/lib/fotorama.css" media="all">
+		<link rel="stylesheet" href="css/lib/fotorama-style.css" media="all">
+		<link rel="stylesheet" href="css/lib/jquery.remodal.css" media="all">
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="css/lib/windy/normalize.css" media="all">
@@ -42,12 +44,18 @@
 		
 	</head>
 
-	<body class="custom-background">
+	<body class="custom-background remodal-bg">
+
+<div class='loadingWrap'>
+    <img src='img/now-loading.gif'>
+</div>
 
 		<div class="header-top">
-			<div class="logo"><img src="img/logo_only_touka.png">
+			<div class="logo">
+				<img src="img/logo_only_touka.png">
 			</div>
 			<div class="logo2">
+				<img src="img/greet.png">
 			</div>
 			<div class="logo3">
 				<img src="img/phone.png">
@@ -96,7 +104,7 @@
 						<img class="opa lazy" width="72" height="71" src="img/label_pick.png" style="opacity: 1;">
 					</div>
 					<div class="topBoxImg img-wrap">
-						<img class="opa lazy" width="290" height="218" alt="メニュー" src="img/menu/marble.png" style="opacity: 1;">
+						<img class="opa lazy" width="410" height="308" alt="メニュー" src="img/menu/menu.png" style="opacity: 1;">
 					</div>
 					<div class="clearfix t0b10">
 						<div class="floatL topGenre">
@@ -111,12 +119,12 @@
 					</p>
 				</div>
 
-				<div class="shop">
+				<div class="shop" onclick="fotorama_shop_popup()">
 					<div class="label">
 						<img class="opa lazy" width="72" height="71" src="img/label_map.png" style="opacity: 1; z-index: 1">
 					</div>
 					<div class="topBoxImg img-wrap">
-						<img class="opa lazy" width="290" height="218" alt="地図" src="img/map.png" style="opacity: 1;">
+						<img class="opa lazy" width="410" height="310" alt="お店情報" src="img/shop/top.png" style="opacity: 1;">
 					</div>
 					<div class="clearfix t0b10">
 						<div class="floatL topGenre">
@@ -163,13 +171,14 @@
 		
 
 
-<div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-maxwidth="1020" data-ratio="480/400" >
-  <a href="img/menu/an.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
-  <a href="img/menu/cheese.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
-  <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
-  <a href="img/menu/cro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
-  <a href="img/menu/curry.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
-  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
+<div id="fotorama" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
+
+  <a href="img/menu/camabert.png" data-caption="くるみカマンベール。 ¥160"><img src="img/menu/an-thumb.png"></a>
+  <a href="img/menu/fromage.png" data-caption="フロマージュ！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
+  <a href="img/menu/kinpira.png" data-caption="きんぴらのおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
+  <a href="img/menu/koubo1.png" data-caption="天然酵母のパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
+  <a href="img/menu/takana.png" data-caption="高菜のおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
+  <a href="img/menu/wiennner.png" data-caption="ウィンナーパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
     <a href="img/menu/an.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
   <a href="img/menu/cheese.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
   <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
@@ -181,9 +190,19 @@
   <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
   <a href="img/menu/cro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
   <a href="img/menu/curry.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
-  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
+  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>  
 </div>
-				
+
+
+
+
+<div id="fotorama_shop" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
+
+  <a href="img/shop/map_no.png" data-caption="越後堀之内駅から徒歩5分。国道17号線沿いのコメリ向かいにあります。"><img src="img/shop/map.png"></a>
+</div>
+
+
+		
 				<div class="windy-demo">
 					<ul id="wi-el" class="wi-container">
 							<li>
@@ -237,6 +256,7 @@
 		<script type="text/javascript" src="js/lib/windy/jquery.windy.js"></script>
 		<script type="text/javascript" src="js/lib/windy/jquery-ui-1.8.23.custom.min.js"></script>
 		<script type="text/javascript" src="js/lib/jquery.bpopup.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.remodal.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>

@@ -1,6 +1,17 @@
+
+$(document).on('mobileinit', function() {
+  $.mobile.loader.prototype.options.textVisible = true;
+  $.mobile.loader.prototype.options.theme = 'b';
+  $.mobile.loader.prototype.options.html = '<img src="http://www.wings.msn.to/image/wings.jpg" width="200" /><h3>loading now...</h3></span>';
+});
+
+
 $(window).load(function() {
 	
-	$(".fotorama").hide();
+	$(".loadingWrap").fadeOut();
+
+	$("#fotorama").hide();	
+	$("#fotorama_shop").hide();
 	$(".windy-demo").hide();
 	
 	//nivoSlider初期化
@@ -117,17 +128,25 @@ function windy_popup(){
 }
 
 function fotorama_popup(){
-	$('.fotorama').bPopup({
+	$('#fotorama').bPopup({
 	    easing: 'easeOutBack', //uses jQuery easing plugin
             speed: 450,
             transition: 'slideDown',
 	});
 }
 
+function fotorama_close(){
+	$('#fotorama').bPopup().close(); 
+}
 
 
-
-
+function fotorama_shop_popup(){
+	$('#fotorama_shop').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+	});
+}
 
 
 
