@@ -133,10 +133,17 @@ function fotorama_popup(){
             speed: 450,
             transition: 'slideDown',
 	});
+	
+	var fotorama = $('#fotorama')
+      .fotorama({allowfullscreen: true})
+      .data('fotorama');
+
+    fotorama.requestFullScreen();
 }
 
 function fotorama_close(){
-	$('#fotorama').bPopup().close(); 
+	$('#fotorama').bPopup().close();
+	$('#fotorama_shop').bPopup().close();
 }
 
 
@@ -146,6 +153,12 @@ function fotorama_shop_popup(){
             speed: 450,
             transition: 'slideDown',
 	});
+	
+	var fotorama = $('#fotorama_shop')
+      .fotorama({allowfullscreen: true})
+      .data('fotorama');
+
+    fotorama.requestFullScreen();
 }
 
 

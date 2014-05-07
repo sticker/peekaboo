@@ -396,11 +396,13 @@
 	height: 32px;
 	top: 0;
 	right: 0;
-	background-position: 0 -32px;
+	/*background-position: 0 -32px;*/
+	background-position: -64px 0;
 	z-index: 20
 }
 .fotorama--fullscreen .fotorama__fullscreen-icon {
-	background-position: -32px -32px
+	/*background-position: -32px -32px*/
+	background-position: -64px 0;
 }
 .fotorama__video-play {
 	width: 96px;
@@ -435,6 +437,7 @@
 	z-index: 20;
 	opacity: 0
 }
+
 .fotorama__wrap--css2 .fotorama__video-close {
 	display: none
 }
