@@ -66,14 +66,14 @@ body.custom-background {
 }
 
 .logo2 {
-	clear:both;
+	float: left;
 	color: #000;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 30px;
+	padding-left: 10px;
 	width: 220px;
 	height: 80px;
 	

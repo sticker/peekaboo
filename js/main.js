@@ -12,7 +12,7 @@ $(window).load(function() {
 
 	$("#fotorama").hide();	
 	$("#fotorama_shop").hide();
-	$(".windy-demo").hide();
+	$("#fotorama_info").hide();
 	
 	//nivoSlider初期化
 	/*
@@ -68,8 +68,7 @@ $(window).load(function() {
 
    
    //windy初期化
-   
-   				var $el = $( '#wi-el' ),
+/*   				var $el = $( '#wi-el' ),
 					windy = $el.windy(),
 					allownavnext = false,
 					allownavprev = false;
@@ -113,7 +112,8 @@ $(window).load(function() {
 						}, 150 );
 					}
 				}
-				
+*/
+
    
 });
 
@@ -144,6 +144,7 @@ function fotorama_popup(){
 function fotorama_close(){
 	$('#fotorama').bPopup().close();
 	$('#fotorama_shop').bPopup().close();
+	$('#fotorama_info').bPopup().close();
 }
 
 
@@ -161,7 +162,19 @@ function fotorama_shop_popup(){
     fotorama.requestFullScreen();
 }
 
+function fotorama_info_popup(){
+	$('#fotorama_info').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+	});
+	
+	var fotorama = $('#fotorama_info')
+      .fotorama({allowfullscreen: true})
+      .data('fotorama');
 
+    fotorama.requestFullScreen();
+}
 
 //以下不要////////////////
 // グレーアウト設定
