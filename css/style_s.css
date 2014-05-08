@@ -39,10 +39,10 @@ body {
 
 body.custom-background {
 	background-image: url('../img/bg750.jpg');
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-position: top center;
 	background-attachment: fixed;
-	background-size:cover;
+	background-size: cover;
 }
 .loadingWrap{
     width: 100%;
@@ -135,9 +135,9 @@ body.custom-background {
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
     float: left;
-    width: 255px;
+    width: 260px;
     height: 290px;
-    margin: 15px 10px 15px 10px;
+    margin: 15px 5px 15px 5px;
     padding: 15px;
 }
 

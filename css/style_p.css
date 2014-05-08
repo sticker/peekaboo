@@ -39,10 +39,10 @@ body {
 
 body.custom-background {
 	background-image: url('../img/bg750.jpg');
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-position: top center;
 	background-attachment: fixed;
-	background-size:cover;
+	background-size: cover;
 }
 
 .loadingWrap{
