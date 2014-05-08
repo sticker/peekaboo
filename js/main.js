@@ -8,7 +8,6 @@ $(document).on('mobileinit', function() {
 
 $(window).load(function() {
 	
-	$(".loadingWrap").fadeOut();
 
 	$("#fotorama").hide();	
 	$("#fotorama_shop").hide();
@@ -114,6 +113,8 @@ $(window).load(function() {
 				}
 */
 
+	//ローディング画像を消す
+	$(".loadingWrap").fadeOut();
    
 });
 
