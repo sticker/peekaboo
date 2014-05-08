@@ -66,6 +66,7 @@ body.custom-background {
 	margin: 0 auto;
 	text-align: center;
 	width: 320px;
+	height: 200px;
 }
 
 
@@ -85,8 +86,8 @@ body.custom-background {
 .logo2 {
 	float: left;
 	color: #000;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-align: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -97,14 +98,14 @@ body.custom-background {
 }
 
 .logo3 {
-	float: left;
+	float: right;
 	color: #000;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-align: right;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 150px;
+	width: 220px;
 	height: 80px;
 	
 }

@@ -85,13 +85,13 @@ body.custom-background {
 .logo2 {
 	float: left;
 	color: #000;
-	margin-top: 20px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 30px;
-	width: 330px;
+	width: 280px;
 	height: 80px;
 	
 }
@@ -99,12 +99,12 @@ body.custom-background {
 .logo3 {
 	float: left;
 	color: #000;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-align: right;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 170px;
+	width: 220px;
 	height: 80px;
 	
 }
