@@ -48,7 +48,7 @@ body.custom-background {
 .header-top {
 	margin: 0 auto;
 	text-align: center;
-	width: 530px;
+	width: 600px;
 }
 
 
@@ -74,7 +74,7 @@ body.custom-background {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 30px;
-	width: 300px;
+	width: 330px;
 	height: 80px;
 	
 }
@@ -87,7 +87,7 @@ body.custom-background {
 	text-align: right;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 130px;
+	width: 170px;
 	height: 80px;
 	
 }
@@ -109,7 +109,7 @@ body.custom-background {
 	overflow: hidden;
 	margin: 0 auto;
 	text-align: center;
-	width : 650px;
+	width : 600px;
 }
 
 .menu, .shop, .info{
@@ -118,8 +118,8 @@ body.custom-background {
 	border-left: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
     float: left;
-    width: 300px;
-    height: 340px;
+    width: 280px;
+    height: 320px;
     margin: 15px 10px 15px 10px;
     padding: 15px;
 }
