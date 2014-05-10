@@ -23,14 +23,16 @@
 		<link rel="stylesheet" href="css/lib/fotorama.css" media="all">
 		<link rel="stylesheet" href="css/lib/fotorama-style.css" media="all">
 		<link rel="stylesheet" href="css/lib/jquery.remodal.css" media="all">
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="css/lib/windy/normalize.css" media="all">
 		<link rel="stylesheet" href="css/lib/windy/windy.css" media="all">
 		<link rel="stylesheet" href="css/lib/windy/style1.css" media="all">
 		<script type="text/javascript" src="js/lib/windy/modernizr.custom.79639.js"></script>
-		<noscript><link rel="stylesheet" href="css/lib/windy/noJS.css" media="all"></noscript>
-		
+		<noscript>
+			<link rel="stylesheet" href="css/lib/windy/noJS.css" media="all">
+		</noscript>
+
 		<link rel="stylesheet" href="css/base.css" media="all">
 		<link rel="stylesheet" href="css/select_style.css" media="all">
 
@@ -41,24 +43,27 @@
 		<!--[if lt IE 9]>
 		<script src="js/lib/css3-mediaqueries.js"></script>
 		<![endif]-->
-		
+
 	</head>
 
 	<body class="custom-background remodal-bg">
-		
-<div class='loadingWrap'>
-    <img src='img/loading.gif'>
-</div>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+		<div class='loadingWrap'>
+			<img src='img/loading.gif'>
+		</div>
 
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
 
 		<div class="header-top">
 			<div class="logo">
@@ -68,123 +73,129 @@
 				<img src="img/greet.png">
 			</div>
 			<div class="logo3">
-				<img src="img/phone.png">10:00〜18:00（生地が無くなり次第終了）　休日：火曜・祝日<br>
-				
-				<span>
-<script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
-<script type="text/javascript">
-new media_line_me.LineButton({"pc":true,"lang":"ja","type":"a"});
-</script>
-</span>
-				
-				<div class="fb-like" data-href="http://horinouchi-pan.com/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-				
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://horinouchi-pan.com/" data-lang="ja" data-count="none">ツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-				
-				
-			</div>
+				魚沼市堀之内2896-1
+				<br>
+				10:00〜18:00<span class="mini">(なくなり次第終了)</span>
+				<br>
+				定休日：火曜・祝日
+				<br>
 
+				<div class="SNS">
+					<div id="SNStop" class="floatR">
+					<div class="iineBtn-fb">
+						<div class="fb-like" data-href="http://horinouchi-pan.com/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+					</div>
+					
+					<div class="iineBtn-line">
+					<span> <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+						<script type="text/javascript">
+							new media_line_me.LineButton({
+								"pc" : true,
+								"lang" : "ja",
+								"type" : "a"
+							});
+						</script> </span>
+					</div>
+					
+					<div class="iineBtn-tw">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://horinouchi-pan.com/" data-lang="ja" data-count="none">ツイート</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = p + '://platform.twitter.com/widgets.js';
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, 'script', 'twitter-wjs');
+					</script>
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-
-<!--
 		<div class="top-img">
-			<div class="slider-wrapper">
-				<div id="slider" class="nivoSlider">
-					<div><img src="img/mainV/1.png" >
-					</div>
-					<div><img src="img/mainV/2.png">
-					</div>
-					<div><img src="img/mainV/3.png">
-					</div>
-					<div><img src="img/mainV/4.png">
-					</div>
-					<div><img src="img/mainV/5.png">
-					</div>
-					<div><img src="img/mainV/6.png">
-					</div>
-				</div>
-			</div>
+			<ul class="rslides">
+				<li><img src="img/mainV/1.png" alt="">
+				</li>
+				<li><img src="img/mainV/2.png" alt="">
+				</li>
+				<li><img src="img/mainV/3.png" alt="">
+				</li>
+				<li><img src="img/mainV/4.png" alt="">
+				</li>
+				<li><img src="img/mainV/5.png" alt="">
+				</li>
+				<li><img src="img/mainV/6.png" alt="">
+				</li>
+			</ul>
 		</div>
--->
 
-<div class="top-img">
-<ul class="rslides">
-  <li><img src="img/mainV/1.png" alt=""></li>
-  <li><img src="img/mainV/2.png" alt=""></li>
-  <li><img src="img/mainV/3.png" alt=""></li>
-  <li><img src="img/mainV/4.png" alt=""></li>
-  <li><img src="img/mainV/5.png" alt=""></li>
-</ul>
-</div>
+		<div class="contents">
 
-
-
-
-			<div class="contents">
-
-				<div class="menu" onclick="fotorama_popup()">
-					<div class="label">
-						<img class="opa lazy" width="72" height="71" src="img/label_pick.png" style="opacity: 1;">
-					</div>
-					<div class="topBoxImg img-wrap">
-						<img class="opa lazy" width="410" height="308" alt="メニュー" src="img/menu/menu.png" style="opacity: 1;">
-					</div>
-					<div class="clearfix t0b10">
-						<div class="floatL topGenre">
-							メニュー
-						</div>
-						<div class="floatR">
-							<img class="lazy" width="85" height="14" src="img/ico_renove.png">
-						</div>
-					</div>
-					<p class="topBoxTitle">
-						天然酵母を使った安心安全でおいしいパンです。焼きたてをどうぞ。
-					</p>
+			<div class="menu" onclick="fotorama_popup()">
+				<div class="label">
+					<img class="opa lazy" width="72" height="71" src="img/label_menu.png" style="opacity: 1;">
 				</div>
-
-				<div class="shop" onclick="fotorama_shop_popup()">
-					<div class="label">
-						<img class="opa lazy" width="72" height="71" src="img/label_map.png" style="opacity: 1; z-index: 1">
-					</div>
-					<div class="topBoxImg img-wrap">
-						<img class="opa lazy" width="410" height="310" alt="お店情報" src="img/shop/top.png" style="opacity: 1;">
-					</div>
-					<div class="clearfix t0b10">
-						<div class="floatL topGenre">
-							ピーカブー
-						</div>
-						<div class="floatR">
-							<img class="lazy" width="85" height="14" src="img/ico_renove.png">
-						</div>
-					</div>
-					<p class="topBoxTitle">
-						越後堀之内駅から徒歩5分。国道17号線沿いのコメリ向かいにあります。
-					</p>
+				<div class="topBoxImg img-wrap">
+					<img class="opa lazy" width="410" height="308" alt="メニュー" src="img/menu/menu.png" style="opacity: 1;">
 				</div>
-
-				<div class="info" onclick="fotorama_info_popup()">
-					<div class="topBoxImg img-wrap">
-						<img class="opa lazy" width="410" height="310" alt="ピーカブーができるまで" src="img/process/process_top.png" style="opacity: 1;">
+				<div class="clearfix t0b10">
+					<div class="floatL topGenre">
+						メニュー
 					</div>
-					<div class="clearfix t0b10">
-						<div class="floatL topGenre">
-							ピーカブーができるまで
-						</div>
-						<div class="floatR">
-							<img class="lazy" width="85" height="14" src="img/ico_renove.png">
-						</div>
+					<div class="floatR">
+						<img class="lazy" width="85" height="14" src="img/ico_renove.png">
 					</div>
-					<p class="topBoxTitle">
-						ピーカブーができるまでの写真を集めました！
-					</p>
 				</div>
-
+				<p class="topBoxTitle">
+					天然酵母を使った安心安全でおいしいパンです。焼きたてをどうぞ。
+				</p>
 			</div>
 
-		
-		
+			<div class="shop" onclick="shop_data_popup()">
+				<div class="label">
+					<img class="opa lazy" width="72" height="71" src="img/label_shop.png" style="opacity: 1; z-index: 1">
+				</div>
+				<div class="topBoxImg img-wrap">
+					<img class="opa lazy" width="410" height="310" alt="お店情報" src="img/shop/top.png" style="opacity: 1;">
+				</div>
+				<div class="clearfix t0b10">
+					<div class="floatL topGenre">
+						ピーカブー
+					</div>
+					<div class="floatR">
+						<img class="lazy" width="85" height="14" src="img/ico_renove.png">
+					</div>
+				</div>
+				<p class="topBoxTitle">
+					越後堀之内駅から徒歩5分。国道17号線沿いのコメリ向かいにあります。
+				</p>
+			</div>
+
+			<div class="info" onclick="fotorama_info_popup()">
+				<div class="label">
+					<img class="opa lazy" width="72" height="71" src="img/label_sp.png" style="opacity: 1; z-index: 1">
+				</div>
+				<div class="topBoxImg img-wrap">
+					<img class="opa lazy" width="410" height="310" alt="ピーカブーができるまで" src="img/process/process_top.png" style="opacity: 1;">
+				</div>
+				<div class="clearfix t0b10">
+					<div class="floatL topGenre">
+						ピーカブーができるまで
+					</div>
+					<div class="floatR">
+						<img class="lazy" width="85" height="14" src="img/ico_renove.png">
+					</div>
+				</div>
+				<p class="topBoxTitle">
+					ピーカブーができるまでの写真を集めました！
+				</p>
+			</div>
+
+		</div>
 
 		<div id="footer" class="even">
 			<p class="copyright">
@@ -192,104 +203,93 @@ new media_line_me.LineButton({"pc":true,"lang":"ja","type":"a"});
 			</p>
 		</div>
 
-		
-		
+		<div id="fotorama" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
 
+			<a href="img/menu/melon.png" data-caption="【さくさくメロンパン】外はさっくり!!中はしっとり!!自信作です!!ラスクもあります♪ ¥130"><img src="img/menu/melon.png"></a>
+			<a href="img/menu/an.png" data-caption="【オーガニックつぶあんパン】有機無農薬栽培の小豆を包みました！ ¥140"><img src="img/menu/an.png"></a>
+			<a href="img/menu/cream.png" data-caption="【自家炊きカスタードクリームパン】香り豊かな自家炊きカスタードクリームがたっぷり!! ¥130"><img src="img/menu/cream.png"></a>
+			<a href="img/menu/wiennner.png" data-caption="【ウィンナーボート】ウィンナーにケチャップとマヨネーズをトッピング!! ¥120"><img src="img/menu/wiennner.png"></a>
+			<a href="img/menu/minimelon.png" data-caption="【ミニメロンパン】お子様に大人気のミニメロンパンです！ ¥90"><img src="img/menu/minimelon.png"></a>
+			<a href="img/menu/fromage.png" data-caption="【フロマージュ】プロセスチーズとシュレッドチーズを使ったダブルチーズ味のソフトフランスパン ¥190"><img src="img/menu/fromage.png"></a>
+			<a href="img/menu/osawhite.png" data-caption="【おさつホワイト】自然な甘みのさつま芋が中に入っています！ ¥100"><img src="img/menu/osawhite.png"></a>
+			<a href="img/menu/curry.png" data-caption="【焼きカレーパン】油で揚げていないとってもヘルシーなカレーパンです！ ¥140"><img src="img/menu/curry.png"></a>
+			<a href="img/menu/takana.png" data-caption="【高菜のおやき】高菜のピリ辛な一品！高菜好きにはたまらない!! ¥160"><img src="img/menu/takana.png"></a>
+			<a href="img/menu/kinpira.png" data-caption="【きんぴらごぼうとチーズのおやき】きんぴらごぼうとチーズの相性バツグン！クセになる一品です！ ¥160"><img src="img/menu/kinpira.png"></a>
+			<a href="img/menu/kurumisweet.png" data-caption="【くるみスイート】ほんのり甘く香ばしいくるみパンです！ ¥120"><img src="img/menu/kurumisweet.png"></a>
+			<a href="img/menu/kurumiosa.png" data-caption="【くるみ おさつ】さつまいもの甘煮をくるみパンで包みました！ ¥200"><img src="img/menu/kurumiosa.png"></a>
+			<a href="img/menu/camembert2.png" data-caption="【くるみカマンベール】カマンベールクリームチーズをくるみパンで包みました！濃厚な食感です ¥170"><img src="img/menu/camembert2.png"></a>
+			<a href="img/menu/cro.png" data-caption="【クロワッサン】バターの香り豊かなパリパリのクロワッサン！ラスクもあります♪ ¥130"><img src="img/menu/cro.png"></a>
+			<a href="img/menu/chococro.png" data-caption="【クロワッサン ショコラ】ビターチョコレートとクロワッサン生地で巻きました！ラスクもあります♪ ¥150"><img src="img/menu/chococro.png"></a>
+			<a href="img/menu/koubo_b.png" data-caption="【天然酵母バタール】全粒粉入りの香ばしい天然酵母パンです！ ¥350"><img src="img/menu/koubo_b.png"></a>
+			<a href="img/menu/koubo_half.png" data-caption="【天然酵母バタールハーフ】全粒粉入りの香ばしい天然酵母のパンです!!バタールの半分のサイズです ¥180"><img src="img/menu/koubo_half.png"></a>
+			<a href="img/menu/koubo_p.png" data-caption="【天然酵母パン】手間ひまかけてじーっくりと焼きました！ ¥120"><img src="img/menu/koubo_p.png"></a>
+			<a href="img/menu/koubo_i.png" data-caption="【天然酵母いちじく】天然酵母生地にいちじくをおしげもなく混ぜ込みました ¥250"><img src="img/menu/koubo_i.png"></a>
+		</div>
 
-<div id="fotorama" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
+		<div id="shop_data" class="shop_data">
+			<div class="bClose">
+				<img src="img/close.png" onclick="shop_data_close()">
+			</div>
+			<div class="shop_header">
+				ピーカブーのお店
+			</div>
 
-  <a href="img/menu/camembert2.png" data-caption="くるみカマンベール。 ¥160"><img src="img/menu/camembert2.png"></a>
-  <a href="img/menu/fromage.png" data-caption="フロマージュ！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/fromage.png"></a>
-  <a href="img/menu/kinpira.png" data-caption="きんぴらのおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/kinpira.png"></a>
-  <a href="img/menu/koubo1.png" data-caption="天然酵母のパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/koubo1.png"></a>
-  <a href="img/menu/takana.png" data-caption="高菜のおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/takana.png"></a>
-  <a href="img/menu/wiennner.png" data-caption="ウィンナーパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/wiennner.png"></a>
-    <a href="img/menu/an.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an.png"></a>
-  <a href="img/menu/chococro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/chococro.png"></a>
-  <a href="img/menu/cream.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream.png"></a>
-  <a href="img/menu/cro.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro.png"></a>
-  <a href="img/menu/curry.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry.png"></a>
-  <a href="img/menu/melon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon.png"></a>
-    <a href="img/menu/koubo_b.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/koubo_b.png"></a>
-  <a href="img/menu/koubo_i.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/koubo_i.png"></a>
-  <a href="img/menu/koubo_i2.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/koubo_i2.png"></a>
-  <a href="img/menu/koubo_p.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/koubo_p.png"></a>
-  <a href="img/menu/kurumiosa.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/kurumiosa.png"></a>
-  <a href="img/menu/kurumisweet.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/kurumisweet.png"></a>  
-  <a href="img/menu/minimelon.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/minimelon.png"></a>  
-  <a href="img/menu/osawhite.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/osawhite.png"></a>  
-  <a href="img/menu/takana2.png" data-caption="おいしいチーズパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/takana2.png"></a>
-</div>
+			<img src="img/shop/map_no.png" width="322" height="196">
 
+			<div class="gmap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.388177985303!2d138.93161367004473!3d37.238496558197866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff596d7fc50f141%3A0x5e60a076843679aa!2z5paw5r2f55yM6a2a5rK85biC5aCA5LmL5YaF77yS77yY77yZ77yW4oiS77yR!5e0!3m2!1sja!2sjp!4v1399681505730" width="600" height="450" frameborder="0" style="border:0"></iframe>
+			</div>
+			<div class="shop_detail">
+				<table class="shop clear">
+					<tr>
+						<td class="koumoku">住　所</td>
+						<td>〒949-7413 新潟県魚沼市堀之内2896-1</td>
+					</tr>
+					<tr>
+						<td class="koumoku">アクセス</td>
+						<td>国道17号線沿いのコメリ向かいにあります。
+						<br>
+						ぽてとはうすさん（美容室）の看板が目印です。
+						<br>
+						JR越後堀之内駅から徒歩7分ほどです。 </td>
+					</tr>
+					<tr>
+						<td class="koumoku">電話番号</td>
+						<td>025-793-7676</td>
+					</tr>
+					<tr>
+						<td class="koumoku">営業時間</td>
+						<td>10：00～18：00
+						<br>
+						（なくなり次第終了させていただきます）</td>
+					</tr>
+					<tr>
+						<td class="koumoku">定休日</td>
+						<td>毎週火曜・祝日</td>
+					</tr>
+					<tr>
+						<td class="koumoku">座席</td>
+						<td>4人ほど座れるイートインコーナーがあります</td>
+					</tr>
+					<tr>
+						<td class="koumoku">駐車場</td>
+						<td class="bottomborder">10台ほど停められます（隣のぽてとはうすさんと共同）</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 
+		<div id="fotorama_info" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
 
+			<a href="img/process/process1.png" data-caption="くるみカマンベール。 ¥160"><img src="img/menu/an-thumb.png"></a>
+			<a href="img/process/process2.png" data-caption="フロマージュ！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
+			<a href="img/process/process3.png" data-caption="きんぴらのおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
+			<a href="img/process/process4.png" data-caption="天然酵母のパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
+			<a href="img/process/process5.png" data-caption="高菜のおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
+			<a href="img/process/process6.png" data-caption="ウィンナーパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
+			<a href="img/process/process7.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
+		</div>
 
-<div id="fotorama_shop" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
-
-  <a href="img/shop/map_no.png" data-caption="越後堀之内駅から徒歩5分。国道17号線沿いのコメリ向かいにあります。"><img src="img/shop/map.png"></a>
-</div>
-
-
-
-
-<div id="fotorama_info" class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-fit="contain" data-width="100%" data-height="100%">
-
-  <a href="img/process/process1.png" data-caption="くるみカマンベール。 ¥160"><img src="img/menu/an-thumb.png"></a>
-  <a href="img/process/process2.png" data-caption="フロマージュ！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cheese-thumb.png"></a>
-  <a href="img/process/process3.png" data-caption="きんぴらのおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cream-thumb.png"></a>
-  <a href="img/process/process4.png" data-caption="天然酵母のパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/cro-thumb.png"></a>
-  <a href="img/process/process5.png" data-caption="高菜のおやき！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/curry-thumb.png"></a>
-  <a href="img/process/process6.png" data-caption="ウィンナーパン！チーズたっぷりおいしいチーズぱんです。 ¥120"><img src="img/menu/melon-thumb.png"></a>
-    <a href="img/process/process7.png" data-caption="おいしいアンパン！あんこたっぷりあまーいあまーいあんぱんです。 ¥100"><img src="img/menu/an-thumb.png"></a>
-</div>
-
-<!--		
-				<div class="windy-demo">
-					<ul id="wi-el" class="wi-container">
-							<li>
-								<img src="img/process/process1.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/process2.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/process3.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/process4.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/process5.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/process6.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-							<li>
-								<img src="img/process/process7.png" alt="image1"/>
-								<h4>ピーカブーができるまで</h4>
-								<p>作っているところの写真</p>
-							</li>
-						</ul>
-						<nav>
-							<span id="nav-prev">prev</span>
-							<span id="nav-next">next</span>
-						</nav>
-				</div>
--->
-
-				
 		<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/lib/responsiveslides.min.js"></script>

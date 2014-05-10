@@ -49,6 +49,7 @@ body.custom-background {
 
 
 .header-top {
+	position: relative;
 	margin: 0 auto;
 	text-align: center;
 	width: 1020px;
@@ -84,7 +85,7 @@ body.custom-background {
 
 .logo3 {
 	float: left;
-	color: #000;
+	color: #404040;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	text-align: right;
@@ -93,6 +94,18 @@ body.custom-background {
 	width: 320px;
 	height: 80px;
 	
+	font-size:small;
+	
+}
+.logo3 .mini {
+	font-size:x-small;
+}
+
+.SNS {
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: right;
 }
 
 .top-img {
@@ -168,15 +181,27 @@ body.custom-background {
 	height: 100%;
 }
 
-.button.b-close, .button.bClose {
-	border-radius: 7px 7px 7px 7px;
-	box-shadow: none;
-	font: bold 131% sans-serif;
-	padding: 0 6px 2px;
-	position: absolute;
-	right: -7px;
-	top: -7px
+.shop_data {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	width: 600px;
 }
+
+table.shop {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #FF9933;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-top: 1px solid #FF9933;
+    empty-cells: show;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 500px;
+}
+
 
 #footer.even {
     background: url("../img/pattern-header-banner.png") repeat scroll 0 0 #353535;

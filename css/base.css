@@ -403,23 +403,23 @@ SNS
 	  margin: 0 auto;
 		display: inline-block;
 	  }
-		.iineBtn-g {
-		  width: 70px;
+		.iineBtn-line {
+		  width: 82px;
 		  height: 28px;
-		  margin: 0;
+		  margin: 2px;
 		  padding: 0;
 		  float: left;
 		  }
 		.iineBtn-tw {
-		  width: 90px;
+		  width: 68px;
 		  height: 28px;
-		  margin: 0;
+		  margin: 2px;
 		  padding: 0;
 		  float: left;
 		  }
 		.iineBtn-fb {
 		  height: 28px;
-		  margin: 0;
+		  margin: 2px;
 		  padding: 0;
 		  float: left;
 		  }

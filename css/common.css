@@ -11,7 +11,58 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
+    margin-top: -50px;
+    margin-left: -50px;
     z-index: 101;
+}
+
+
+
+.map {
+	position: relative;
+	padding-bottom: 20%;
+	height: 0;
+	overflow: hidden;
+}
+
+.gmap {
+position: relative;
+padding-bottom: 75%;
+height: 0;
+overflow: hidden;
+}
+.gmap iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+.bClose {
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: none;
+	font: bold 131% sans-serif;
+	padding: 0 6px 2px;
+	position: absolute;
+	right: -7px;
+	top: 0px
+}
+
+
+.shop td.koumoku {
+    background-color: #FF9933;
+    color: #FFFFFF;
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 80px;
+}
+.shop td {
+    border-top: 1px solid #FF9933;
+    padding: 0.5em 1em;
+    color: #000;
+}
+.shop td.bottomborder {
+    border-bottom: 1px solid #FF9933;
+    padding: 0.5em 1em;
 }
