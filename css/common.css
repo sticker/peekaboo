@@ -17,17 +17,118 @@
 }
 
 
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-.map {
+img{ max-width : 100%}
+
+html,body {
+  height:100%;
+  min-height: 100%;
+}
+
+body {
+	margin-top: 0px;
+}
+
+body.custom-background {
+	background-image: url('../img/bg750.jpg');
+	background-repeat: repeat-y;
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.logo3 .mini {
+	font-size:x-small;
+}
+
+.SNS {
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: right;
+}
+
+
+/* ロールオーバー色指定 */
+.contents :hover　:not(.label) {
+	background:#fafad2;
+}
+
+.menu img, .shop img, .info img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.topBoxImg {
+		margin-bottom: 10px;
+		position: relative;
+}
+
+.label {
+		position: absolute;
+		height: 71px;
+		width: 72px;
+		left: -1px;
+		top: -1px;
+		z-index: 2;
+}
+
+.topGenre{
+		font-family:'Lucida Grande', Meiryo, sans-serif;
+		font-size: 15px;
+		color: #909090;
+		font-weight: bold;
+}
+
+.topBoxTitle {
+		font-size: 12px;
+		color: #808080;
+		font-weight: bold;
+}
+
+.fotorama {
 	position: relative;
-	padding-bottom: 20%;
-	height: 0;
-	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+
+.shop_header {
+	border-bottom: 5px solid #FF9933;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #FFFFFF; 
 }
 
 .gmap {
 position: relative;
 padding-bottom: 75%;
+margin-top: 20px;
 height: 0;
 overflow: hidden;
 }
@@ -65,4 +166,20 @@ height: 100% !important;
 .shop td.bottomborder {
     border-bottom: 1px solid #FF9933;
     padding: 0.5em 1em;
+}
+
+
+#footer.even {
+    background: url("../img/pattern-header-banner.png") repeat scroll 0 0 #353535;
+}
+#footer {
+    position: relative;
+    clear: both;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    padding: 50px 0;
+    z-index: 2;
+    width: 100%;
 }

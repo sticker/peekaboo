@@ -116,6 +116,8 @@ $(window).load(function() {
 	//ローディング画像を消す
 	$(".loadingWrap").fadeOut();
    
+   //ラベルのバックグラウンドがマウスオーバーしたときに変更されないようにする
+   $(".label").unbind("mouseenter").unbind("mouseleave");
 });
 
 
