@@ -122,7 +122,16 @@ body.custom-background {
 	border-bottom: 5px solid #FF9933;
 	padding: 10px;
 	margin-bottom: 10px;
-	color: #FFFFFF; 
+	color: #FFFFFF;
+}
+
+.map_header {
+	clear: both;
+	border-bottom: 5px solid #FF9933;
+	padding: 10px;
+	margin-bottom: 30px;
+	color: #FFFFFF;
+	width: 100%;
 }
 
 .gmap {
