@@ -3,6 +3,7 @@ $(window).load(function() {
 	$("#fotorama").hide();	
 	$("#shop_data").hide();
 	$("#fotorama_info").hide();
+	$("#fotorama_opening").hide();
 
    //responsiveSlider初期化
    $(".rslides").responsiveSlides({
@@ -23,6 +24,7 @@ $(window).load(function() {
   before: function(){},   // Function: Before callback
   after: function(){}     // Function: After callback
 });
+
 
 	//ローディング画像を消す
 	$(".loadingWrap").fadeOut();
@@ -65,9 +67,24 @@ function fotorama_info_popup(){
 }
 
 
+function fotorama_opening_popup(){
+	$('#fotorama_opening').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+	});
+	
+	var fotorama = $('#fotorama_opening')
+      .fotorama({allowfullscreen: true})
+      .data('fotorama');
+
+    fotorama.requestFullScreen();
+}
+
 function fotorama_close(){
 	$('#fotorama').bPopup().close();
 	$('#fotorama_info').bPopup().close();
+	$('#fotorama_opening').bPopup().close();
 }
 
 function shop_data_close(){
