@@ -34,7 +34,7 @@ $(window).load(function() {
 	$(".loadingWrap").hide();
 	
 	//ロゴ画像をフェードアウト
-	$(".loadingWrap_logo").delay(2000).fadeOut(1500);
+	$(".loadingWrap_logo").delay(1500).fadeOut(1500);
 
 	
 });

@@ -60,7 +60,7 @@ body {
 }
 
 body.custom-background {
-	background-image: url('../img/bg750.jpg');
+	background-image: url('../img/bg.jpg');
 	background-repeat: repeat-y;
 	background-position: top center;
 	background-attachment: fixed;
