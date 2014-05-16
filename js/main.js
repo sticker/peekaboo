@@ -26,8 +26,17 @@ $(window).load(function() {
 });
 
 
+	
+	//ロゴ画像を全画面表示
+	$(".loadingWrap_logo").show();
+
 	//ローディング画像を消す
-	$(".loadingWrap").fadeOut();
+	$(".loadingWrap").hide();
+	
+	//ロゴ画像をフェードアウト
+	$(".loadingWrap_logo").delay(2000).fadeOut(1500);
+
+	
 });
 
 function fotorama_popup(){
