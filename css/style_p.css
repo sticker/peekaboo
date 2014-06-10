@@ -38,7 +38,7 @@
 .logo3 {
 	float: left;
 	color: #404040;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 20px;
 	text-align: right;
 	padding-top: 5px;
@@ -88,10 +88,57 @@
 }
 
 .news_data, .shop_data {
-	overflow: hidden;
+	position: relative;
 	margin: 0 auto;
 	text-align: center;
 	width: 600px;
+}
+
+.news_detail {
+	
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	
+	background-image: url('../img/cork03-p.jpg');
+	border: 2px solid #FFFFEE;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.news_pin {
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+	color: #011;
+    margin-top: 20px;
+	width: 350px;
+	height: 100px;
+	
+	background-color: #eee;
+    
+}
+
+.news_pin:after {
+	background-color: #eee;
+    
+    width:300px; /* 擬似要素の幅  */
+    height:95px; /* 擬似要素の高さ  */
+    content: ""; /* 擬似要素の内容 */
+    position: absolute; /* 位置指定 */
+    top: 0px; /* 上から */
+    right: 3px; /* 右から */
+    -webkit-box-shadow: 0 5px 5px #555 ;
+    -moz-box-shadow: 0 5px 5px #555 ;
+    box-shadow: 0 5px 5px #555 ;
+    -webkit-transform: rotate(2deg); /* ズラす（Chrome、Safari） */
+    -moz-transform: rotate(2deg); /* ズラす（FireFox） */
+    -o-transform: rotate(2deg); /* ズラす（Opera） */
+    -ms-transform: rotate(2deg); /* ズラす（IE） */
+    transform: rotate(2deg); /* ズラす（CSS3） */
+    z-index: -1;
 }
 
 table.shop {
