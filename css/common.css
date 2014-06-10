@@ -139,11 +139,19 @@ a:hover img{
 	height: 100%;
 }
 
-.shop_header {
+.news_header, .shop_header {
 	border-bottom: 5px solid #FF9933;
 	padding: 10px;
 	margin-bottom: 10px;
 	color: #FFFFFF;
+}
+
+.facebook {
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	background: #FFFFEE;
+	width: 500px;
 }
 
 .map_header {

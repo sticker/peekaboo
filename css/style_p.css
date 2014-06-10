@@ -87,9 +87,7 @@
     padding: 15px;
 }
 
-
-
-.shop_data {
+.news_data, .shop_data {
 	overflow: hidden;
 	margin: 0 auto;
 	text-align: center;

@@ -1,5 +1,6 @@
 $(window).load(function() {
 
+	$("#news_data").hide();
 	$("#fotorama").hide();	
 	$("#shop_data").hide();
 	$("#fotorama_info").hide();
@@ -38,6 +39,14 @@ $(window).load(function() {
 
 	
 });
+
+function news_popup(){
+	$('#news_data').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+	});
+}
 
 function fotorama_popup(){
 	$('#fotorama').bPopup({
@@ -94,6 +103,10 @@ function fotorama_close(){
 	$('#fotorama').bPopup().close();
 	$('#fotorama_info').bPopup().close();
 	$('#fotorama_opening').bPopup().close();
+}
+
+function news_close(){
+	$('#news_data').bPopup().close();
 }
 
 function shop_data_close(){
