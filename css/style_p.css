@@ -87,6 +87,12 @@
     padding: 15px;
 }
 
+#fb_image {
+	width:100%;
+	height:200px;
+	overflow:hidden;  /* これが重要 */
+}
+
 .news_data, .shop_data {
 	position: relative;
 	margin: 0 auto;
@@ -99,13 +105,14 @@
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
-	width: 400px;
-	height: 400px;
+	width: 90%;
+	height: 500px;
 	
-	background-image: url('../img/cork03-p.jpg');
-	border: 2px solid #FFFFEE;
+	background-image: url('../img/cork0.jpg');
+	border: 20px solid #FFFFEE;
     border-collapse: separate;
     border-spacing: 2px;
+    z-index: 1;
 }
 
 .news_pin {
@@ -117,22 +124,22 @@
 	width: 350px;
 	height: 100px;
 	
-	background-color: #eee;
-    
+	background: #eee url('../img/fusen-red.gif') repeat-y right top;
+
 }
 
 .news_pin:after {
 	background-color: #eee;
     
     width:300px; /* 擬似要素の幅  */
-    height:95px; /* 擬似要素の高さ  */
+    height:90px; /* 擬似要素の高さ  */
     content: ""; /* 擬似要素の内容 */
     position: absolute; /* 位置指定 */
-    top: 0px; /* 上から */
+    top: 5px; /* 上から */
     right: 3px; /* 右から */
     -webkit-box-shadow: 0 5px 5px #555 ;
     -moz-box-shadow: 0 5px 5px #555 ;
-    box-shadow: 0 5px 5px #555 ;
+    box-shadow: 0 10px 5px #555 ;
     -webkit-transform: rotate(2deg); /* ズラす（Chrome、Safari） */
     -moz-transform: rotate(2deg); /* ズラす（FireFox） */
     -o-transform: rotate(2deg); /* ズラす（Opera） */
@@ -140,6 +147,24 @@
     transform: rotate(2deg); /* ズラす（CSS3） */
     z-index: -1;
 }
+
+.pin_body {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	color: #808080;
+	font-weight: bold;
+}
+
+.pin_logo {
+	position: relative;
+	width: 20%;
+	top: 48%;
+	left: 36%;
+}
+
 
 table.shop {
     background-color: #FFFFFF;

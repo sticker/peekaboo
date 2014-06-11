@@ -25,8 +25,6 @@ $(window).load(function() {
   before: function(){},   // Function: Before callback
   after: function(){}     // Function: After callback
 });
-
-
 	
 	//ロゴ画像を全画面表示
 	$(".loadingWrap_logo").show();
@@ -36,6 +34,8 @@ $(window).load(function() {
 	
 	//ロゴ画像をフェードアウト
 	$(".loadingWrap_logo").delay(1500).fadeOut(1500);
+
+
 
 	
 });
@@ -112,3 +112,28 @@ function news_close(){
 function shop_data_close(){
 	$('#shop_data').bPopup().close();
 }
+
+
+
+$(function() {
+	var formatData = function(date) {
+		var d = new Date(date);
+		return (d.getFullYear() + '.' + ("0"+(d.getMonth()+1)).slice(-2)  + '.' + ("0"+d.getDate()).slice(-2));
+	};
+	$.getJSON('http://ajax.googleapis.com/ajax/services/feed/load?callback=?', {
+		q : 'http://www.facebook.com/feeds/page.php?id=475567815919958&format=rss20',
+		v : '1.0',
+		num : 1
+	}, function(data) {
+		$.each(data.responseData.feed.entries, function(i, item) {
+			//$('#facebook').append('<li><span class="fb_date">' + formatData(item.publishedDate) + '</span><p class="fb_comm"><a href="' + item.link + '">' + item.title + '</a></p></li>');
+
+			var img_src_end = item.content.substring( item.content.indexOf("src=\"") + 5);
+			var img_src = img_src_end.substring( 0, img_src_end.indexOf("\""));
+			var img_src_n = img_src.replace("_s.jpg", "_n.jpg");
+			
+			$('#fb_image').append('<img class="opa lazy" width="410" height="308" alt="Facebookにて近況を随時アップしています！" src="' + img_src_n +'">');
+			
+		});
+	});
+});

@@ -120,6 +120,12 @@ a:hover img{
 	z-index: 2;
 }
 
+
+
+#fb_image img {
+	margin: -50px 0px 0px 0px;　/* 位置コントロール */
+}
+
 .topGenre {
 	font-family: 'Lucida Grande', Meiryo, sans-serif;
 	font-size: 15px;
