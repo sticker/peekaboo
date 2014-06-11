@@ -99,10 +99,14 @@
 	width: 90%;
 	height: 400px;
 	
-	background-image: url('../img/cork0.jpg');
-	border: 20px solid #FFFFEE;
+	padding-top: 20px;
+	background-image: url('../img/cork2.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+	/*border: 20px solid #FFFFEE;
     border-collapse: separate;
-    border-spacing: 2px;
+    border-spacing: 2px;*/
     z-index: 1;
 }
 
@@ -152,8 +156,8 @@
 .pin_logo {
 	position: relative;
 	width: 80px;
-	top: 163px;
-	left: 150px;
+	top: 170px;
+	left: 135px;
 }
 
 table.shop {
