@@ -144,16 +144,16 @@
 	margin-top: 10px;
 	margin-left: 10px;
 	padding-top: 10px;
-	padding-right: 10px;
+	padding-right: 15px;
 	color: #808080;
 	font-weight: bold;
 }
 
 .pin_logo {
 	position: relative;
-	width: 30%;
-	top: 30%;
-	left: 30%;
+	width: 70px;
+	top: 96px;
+	left: 88px;
 }
 
 .topBoxTitle {

@@ -67,7 +67,7 @@ body.custom-background {
 	background-size: cover;
 }
 
-.logo3 .mini {
+.mini {
 	font-size: x-small;
 }
 
@@ -94,7 +94,7 @@ body.custom-background {
 	background: #CCCCCC;
 }
 
-a:hover img{
+a:hover img {
 	opacity:0.5;
 	filter:alpha(opacity=50);
 	-ms-filter: "alpha( opacity=50 )";
@@ -120,7 +120,28 @@ a:hover img{
 	z-index: 2;
 }
 
+.fb_body {
+	position: absolute;
+	bottom: 0px;
+	padding: 8px;
+	/*
+	filter:dropshadow(color=#000000,offX= 0,offY=-1)
+	dropshadow(color=#000000,offX= 1,offY= 0)
+	dropshadow(color=#000000,offX= 0,offY= 1)
+	dropshadow(color=#000000,offX=-1,offY= 0);
+	*/
+	-webkit-text-stroke-color: #FFF;
+	-webkit-text-stroke-width: 1px;
 
+	text-shadow: black 1px 1px 0px, black -1px 1px 0px,
+	black 1px -1px 0px, black -1px -1px 0px;
+	
+	font-family: 'Lucida Grande', Meiryo, sans-serif;
+}
+
+.fb_body a:hover {
+	color: #DDCCAA;
+}
 
 #fb_image img {
 	margin: -50px 0px 0px 0px;　/* 位置コントロール */

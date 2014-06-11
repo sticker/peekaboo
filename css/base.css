@@ -75,21 +75,22 @@ ul{
 Link
 ------------------------------------------------------------*/	
 a:link {
-  color:#262626;
+  /*color:#262626;*/
+  color:#FFF;
   text-decoration:none;
   }	
 a:visited {
   color:#262626;
   text-decoration:none;
-  }
-a:hover {
+ }
+/*a:hover {
   color:#aaa;
   text-decoration:none;
   -moz-transition: all 0.26s ease-out;
   -o-transition: all 0.26s ease-out;
   -webkit-transition: all 0.26s ease-out;
   -ms-transition: all 0.26s ease-out;
-}
+}*/
 a:active {
   color:#262626;
   text-decoration:none;
