@@ -126,17 +126,15 @@ $(function() {
 		num : 1
 	}, function(data) {
 		$.each(data.responseData.feed.entries, function(i, item) {
-			//$('#facebook').append('<li><span class="fb_date">' + formatData(item.publishedDate) + '</span><p class="fb_comm"><a href="' + item.link + '">' + item.title + '</a></p></li>');
 
 			var img_src_end = item.content.substring( item.content.indexOf("src=\"") + 5);
 			var img_src = img_src_end.substring( 0, img_src_end.indexOf("\""));
 			var img_src_n = img_src.replace("_s.jpg", "_n.jpg");
-			
 			$('#fb_image').append('<img class="opa lazy imggray" width="410" height="308" alt="Facebookにて近況を随時アップしています！" src="' + img_src_n +'">');			
-			
+
 			var fb_body = item.title;
 			if(item.title.length >= 360){
-				fb_body = item.title.substr(0, 360 + (item.title.indexOf(";", 360) -360)) + '...'; 
+				fb_body = item.title.substr(0, 360 + (item.title.indexOf(";", 360) -360)+1) + '...'; 
 			}
 			$('.fb_body').append('<a href="javascript:news_popup()"><p>' + fb_body + '</p></a>');
 			
