@@ -5,6 +5,8 @@ $(window).load(function() {
 	$("#shop_data").hide();
 	$("#fotorama_info").hide();
 	$("#fotorama_opening").hide();
+	$("#fotorama_make").hide();
+	$("#fotorama_zakka").hide();
 
    //responsiveSlider初期化
    $(".rslides").responsiveSlides({
@@ -99,10 +101,40 @@ function fotorama_opening_popup(){
     fotorama.requestFullScreen();
 }
 
+function fotorama_make_popup(){
+	$('#fotorama_make').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+	});
+	
+	var fotorama = $('#fotorama_make')
+      .fotorama({allowfullscreen: true})
+      .data('fotorama');
+
+    fotorama.requestFullScreen();
+}
+
+function fotorama_zakka_popup(){
+	$('#fotorama_zakka').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+	});
+	
+	var fotorama = $('#fotorama_zakka')
+      .fotorama({allowfullscreen: true})
+      .data('fotorama');
+
+    fotorama.requestFullScreen();
+}
+
 function fotorama_close(){
 	$('#fotorama').bPopup().close();
 	$('#fotorama_info').bPopup().close();
 	$('#fotorama_opening').bPopup().close();
+	$('#fotorama_make').bPopup().close();
+	$('#fotorama_zakka').bPopup().close();
 }
 
 function news_close(){
