@@ -152,24 +152,20 @@ $(function() {
 		var d = new Date(date);
 		return (d.getFullYear() + '.' + ("0"+(d.getMonth()+1)).slice(-2)  + '.' + ("0"+d.getDate()).slice(-2));
 	};
-	$.getJSON('http://ajax.googleapis.com/ajax/services/feed/load?callback=?', {
-		q : 'http://www.facebook.com/feeds/page.php?id=475567815919958&format=rss20',
-		v : '1.0',
-		num : 1
+	$.getJSON('https://graph.facebook.com/v2.3/peekaboo.horinouchi/feed?access_token=658191474235259|JkeFWLFjeitSIZdOFugjNviAMfo&limit=1', {
+		access_token : '658191474235259|JkeFWLFjeitSIZdOFugjNviAMfo',
+		limit : '1'
 	}, function(data) {
-		$.each(data.responseData.feed.entries, function(i, item) {
 
-			var img_src_end = item.content.substring( item.content.indexOf("src=\"") + 5);
-			var img_src = img_src_end.substring( 0, img_src_end.indexOf("\""));
-			var img_src_n = img_src.replace("_s.jpg", "_n.jpg");
-			$('#fb_image').append('<img class="opa lazy imggray" width="410" height="308" alt="Facebookにて近況を随時アップしています！" src="' + img_src_n +'">');			
+			var src_url = 'https://graph.facebook.com/' + data.data[0].object_id + '/picture?type=normal';
+			$('#fb_image').append('<img class="opa lazy imggray" width="410" height="308" alt="Facebookにて近況を随時アップしています！" src="' + src_url +'">');			
 
-			var fb_body = item.title;
-			if(item.title.length >= 360){
-				fb_body = item.title.substr(0, 360 + (item.title.indexOf(";", 360) -360)+1) + '...'; 
+			var fb_body = data.data[0].message;
+			console.log(fb_body.length);
+			if(fb_body.length >= 100){
+				fb_body = fb_body.substr(0, 100 + (fb_body.indexOf(";", 100) -100)+1) + '...'; 
 			}
 			$('.fb_body').append('<a href="javascript:news_popup()"><p>' + fb_body + '</p></a>');
 			
-		});
 	});
 });
