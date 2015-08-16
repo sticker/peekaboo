@@ -162,8 +162,9 @@ $(function() {
 
 			var fb_body = data.data[0].message;
 			console.log(fb_body.length);
-			if(fb_body.length >= 100){
-				fb_body = fb_body.substr(0, 100 + (fb_body.indexOf(";", 100) -100)+1) + '...'; 
+			if(fb_body.length >= 120){
+				//fb_body = fb_body.substr(0, 100 + (fb_body.indexOf(";", 100) -100)+1) + '...'; 
+				fb_body = fb_body.substr(0, 120 ) + '...'; 
 			}
 			$('.fb_body').append('<a href="javascript:news_popup()"><p>' + fb_body + '</p></a>');
 			
