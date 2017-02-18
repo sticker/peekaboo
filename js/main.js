@@ -166,7 +166,65 @@ $(function() {
 				//fb_body = fb_body.substr(0, 100 + (fb_body.indexOf(";", 100) -100)+1) + '...'; 
 				fb_body = fb_body.substr(0, 75 ) + '...'; 
 			}
-			$('.fb_body').append('<a href="javascript:news_popup()"><p>' + fb_body + '</p></a>');
+			$('#fb_body').append('<a href="javascript:news_popup()"><p>' + fb_body + '</p></a>');
 			
 	});
 });
+
+
+$(function() {
+	$.ajax({
+		url: 'https://api.instagram.com/v1/users/4516074146/media/recent/',
+		data: { access_token : '30630151.32bc03f.a4b5cf3602704ebd923f85eb2bbe00a5', count: '3'},
+		dataType: "jsonp",
+		error: function(jqXHR, textStatus, errorThrown) {
+            $("#insta_body").append(textStatus);
+        },
+        success: function(data, textStatus, jqXHR) {
+
+			for (var i = 0, length = 3; i < length; i++) {
+				var d = data.data[i];
+				var idx = i + 1;
+				//var src_url = data.data[0].images.low_resolution.url;
+				var src_url = d.images.standard_resolution.url;
+				
+				//$('#insta_image_'+idx).append('<img class="opa lazy imggray" width="306" height="306" alt="Instagramをチェックしてください！" src="' + src_url +'">');			
+				$('#insta_image_'+idx).append('<img class="opa lazy imggray" width="612" height="612" alt="Instagramをチェックしてください！" src="' + src_url +'">');			
+				
+				var insta_body = d.caption.text;
+				console.log(insta_body.length);
+				if(insta_body.length >= 75){
+					//fb_body = fb_body.substr(0, 100 + (fb_body.indexOf(";", 100) -100)+1) + '...'; 
+					insta_body = insta_body.substr(0, 75 ) + '...'; 
+				}
+				
+				//var insta_url = d.link;
+				var insta_url = "https://www.instagram.com/peekaboo_staff/"
+				$('#insta_body_'+idx).append('<a href="' + insta_url + '"><p>' + insta_body + '</p></a>');
+				$('#insta_url_'+idx).attr("href", insta_url);
+				//$('#insta_body').append(insta_body);
+			}
+		}
+			
+	});
+});
+
+/*
+$(function() {
+    $.ajax({
+      url: "https://api.instagram.com/v1/users/self/media/recent",
+      data: { access_token: "30630151.32bc03f.a4b5cf3602704ebd923f85eb2bbe00a5" },
+      dataType: "jsonp",
+      error: function(jqXHR, textStatus, errorThrown) {
+        $("#insta_body").append(textStatus);
+      },
+      success: function(data, textStatus, jqXHR) {
+        $("#insta_body").text("");
+        for (var i = 0, length = 5; i < length; i++) {
+          var d = data.data[i];
+          $("#insta_body").append(
+          $("<div>").addClass("image").append($("<a>").attr("href", d.link).attr("target", "_blank").append($("<img>").attr("src", d.images.thumbnail.url))));}
+        }
+    });
+});
+*/
