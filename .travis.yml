@@ -1,0 +1,15 @@
+language: bash
+
+before_install:
+  - sudo apt-get install -qq ncftp
+
+script:
+  "ncftpput \
+   -u $USER\
+   -p $PASS\
+   -v\
+   -m\
+   -R\
+   $SERVER\
+   $REMOTEDIR\
+   $LOCALDIR/*"
