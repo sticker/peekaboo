@@ -172,6 +172,7 @@ $(function() {
 });
 
 
+/*
 $(function() {
 	$.ajax({
 		url: 'https://api.instagram.com/v1/users/4516074146/media/recent/',
@@ -208,6 +209,7 @@ $(function() {
 			
 	});
 });
+*/
 
 /*
 $(function() {
