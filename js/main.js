@@ -152,12 +152,13 @@ $(function() {
 		var d = new Date(date);
 		return (d.getFullYear() + '.' + ("0"+(d.getMonth()+1)).slice(-2)  + '.' + ("0"+d.getDate()).slice(-2));
 	};
-	$.getJSON('https://graph.facebook.com/v2.3/peekaboo.horinouchi/feed?access_token=658191474235259|JkeFWLFjeitSIZdOFugjNviAMfo&limit=1', {
+	$.getJSON('https://graph.facebook.com/v3.3/peekaboo.horinouchi/feed', {
 		access_token : '658191474235259|JkeFWLFjeitSIZdOFugjNviAMfo',
-		limit : '1'
+		limit : '1',
+		fields : 'picture,message'
 	}, function(data) {
 
-			var src_url = 'https://graph.facebook.com/' + data.data[0].object_id + '/picture?type=normal';
+			var src_url = data.data[0].picture;
 			$('#fb_image').append('<img class="opa lazy imggray" width="410" height="308" alt="Facebookにて近況を随時アップしています！" src="' + src_url +'">');			
 
 			var fb_body = data.data[0].message;
