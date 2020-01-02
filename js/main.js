@@ -146,7 +146,7 @@ function shop_data_close(){
 }
 
 
-
+/*
 $(function() {
 	var formatData = function(date) {
 		var d = new Date(date);
@@ -170,6 +170,7 @@ $(function() {
 			
 	});
 });
+*/
 
 
 /*
