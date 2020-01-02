@@ -152,10 +152,9 @@ $(function() {
 		var d = new Date(date);
 		return (d.getFullYear() + '.' + ("0"+(d.getMonth()+1)).slice(-2)  + '.' + ("0"+d.getDate()).slice(-2));
 	};
-	$.getJSON('https://graph.facebook.com/v3.3/peekaboo.horinouchi/feed', {
+	$.getJSON('https://graph.facebook.com/peekaboo.horinouchi', {
 		access_token : '658191474235259|JkeFWLFjeitSIZdOFugjNviAMfo',
-		limit : '1',
-		fields : 'picture,message'
+		fields : 'feed.limit(3)'
 	}, function(data) {
 
 			var src_url = data.data[0].picture;
